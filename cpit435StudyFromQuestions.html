@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Management Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .question { margin: 20px 0; padding: 10px; border: 1px solid #ddd; }
+        .result { color: green; font-weight: bold; }
+        .incorrect { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Project Management Quiz</h1>
+    <form id="quizForm">
+
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. Which of the following is NOT a process in Project Time Management?</p>
+            <label><input type="radio" name="q1" value="a"> a. Planning schedule management</label><br>
+            <label><input type="radio" name="q1" value="b"> b. Creating WBS</label><br>
+            <label><input type="radio" name="q1" value="c"> c. Defining activities</label><br>
+            <label><input type="radio" name="q1" value="d"> d. Sequencing activities</label>
+        </div>
+
+        <!-- Question 1.2 -->
+        <div class="question">
+            <p>1.2 ______ includes optimistic, most likely, and pessimistic estimates.</p>
+            <label><input type="radio" name="q1.2" value="a"> a. Activity duration estimate</label><br>
+            <label><input type="radio" name="q1.2" value="b"> b. Three-point estimates</label><br>
+            <label><input type="radio" name="q1.2" value="c"> c. Milestone</label><br>
+            <label><input type="radio" name="q1.2" value="d"> d. Developing the schedule</label>
+        </div>
+
+        <!-- Question 1.3 -->
+        <div class="question">
+            <p>1.3 ______ describes detailed information about each WBS item.</p>
+            <label><input type="radio" name="q1.3" value="a"> a. WBS</label><br>
+            <label><input type="radio" name="q1.3" value="b"> b. Scope Statement</label><br>
+            <label><input type="radio" name="q1.3" value="c"> c. WBS dictionary</label><br>
+            <label><input type="radio" name="q1.3" value="d"> d. Scope Creep</label>
+        </div>
+
+        <!-- Question 1.4 -->
+        <div class="question">
+            <p>1.4 ______ involves formal acceptance of project deliverables.</p>
+            <label><input type="radio" name="q1.4" value="a"> a. Scope Statement</label><br>
+            <label><input type="radio" name="q1.4" value="b"> b. Scope Validation</label><br>
+            <label><input type="radio" name="q1.4" value="c"> c. Scope Review</label><br>
+            <label><input type="radio" name="q1.4" value="d"> d. WBS</label>
+        </div>
+
+        <!-- Question 1.5 -->
+        <div class="question">
+            <p>1.5 ______ are costs directly related to project products/services.</p>
+            <label><input type="radio" name="q1.5" value="a"> a. Sunk Cost</label><br>
+            <label><input type="radio" name="q1.5" value="b"> b. Intangible Cost</label><br>
+            <label><input type="radio" name="q1.5" value="c"> c. Direct Cost</label><br>
+            <label><input type="radio" name="q1.5" value="d"> d. Indirect Cost</label>
+        </div>
+        <div class="question">
+            <p>1.6 ______ is money that has been spent in the past; you should not include it when deciding projects to invest in.</p>
+            <label><input type="radio" name="q1.6" value="a"> a. Sunk Cost</label><br>
+            <label><input type="radio" name="q1.6" value="b"> b. Intangible Cost</label><br>
+            <label><input type="radio" name="q1.6" value="c"> c. Direct Cost</label><br>
+            <label><input type="radio" name="q1.6" value="d"> d. Indirect Cost</label>
+        </div>
+
+        <div class="question">
+            <p>1.7 ______ is a tabulation of activities for a project schedule that includes activity names, identifiers, and descriptions.</p>
+            <label><input type="radio" name="q1.7" value="a"> a. Activity List</label><br>
+            <label><input type="radio" name="q1.7" value="b"> b. Activity Attributes</label><br>
+            <label><input type="radio" name="q1.7" value="c"> c. WBS</label><br>
+            <label><input type="radio" name="q1.7" value="d"> d. WBS Dictionary</label>
+        </div>
+
+        <div class="question">
+            <p>1.8 ______ dependencies are defined by the project team (soft logic) and may limit scheduling options.</p>
+            <label><input type="radio" name="q1.8" value="a"> a. Mandatory</label><br>
+            <label><input type="radio" name="q1.8" value="b"> b. Discretionary</label><br>
+            <label><input type="radio" name="q1.8" value="c"> c. External</label><br>
+            <label><input type="radio" name="q1.8" value="d"> d. Internal</label>
+        </div>
+
+        <div class="question">
+            <p>1.9 ______ is a scheduling method that considers limited resources and uses buffers to protect deadlines.</p>
+            <label><input type="radio" name="q1.9" value="a"> a. Critical Path Analysis</label><br>
+            <label><input type="radio" name="q1.9" value="b"> b. Critical Schedule Analysis</label><br>
+            <label><input type="radio" name="q1.9" value="c"> c. Critical Cost Analysis</label><br>
+            <label><input type="radio" name="q1.9" value="d"> d. Critical Chain Scheduling</label>
+        </div>
+
+        <!-- Questions 1.6 to 1.9 (Already included in previous code) -->
+        <!-- ... -->
+
+        <!-- True/False Questions -->
+        <div class="question">
+            <p>2. Projects are more successful when managers rely heavily on authority/money/penalty.</p>
+            <label><input type="radio" name="q2" value="true"> True</label><br>
+            <label><input type="radio" name="q2" value="false"> False</label>
+        </div>
+
+        <div class="question">
+            <p>3. Types of power include: expert, reward, referent, and legitimate.</p>
+            <label><input type="radio" name="q3" value="true"> True</label><br>
+            <label><input type="radio" name="q3" value="false"> False</label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Submit Answers</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script>
+        const correctAnswers = {
+            "q1": "b",        // Correct: Creating WBS is NOT part of Time Management
+            "q1.2": "b",      // Three-point estimates
+            "q1.3": "c",      // WBS dictionary
+            "q1.4": "b",      // Scope Validation
+            "q1.5": "c",      // Direct Cost
+            "q1.6": "a",      // Sunk Cost
+            "q1.7": "a",      // Activity List
+            "q1.8": "b",      // Discretionary
+            "q1.9": "d",      // Critical Chain Scheduling
+            "q2": "false",    // False
+            "q3": "false"     // False (Coercive is missing)
+        };
+
+        function checkAnswers() {
+            let score = 0;
+            let resultsHTML = "<h2>Results:</h2>";
+
+            for (const [question, correct] of Object.entries(correctAnswers)) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (selected) {
+                    if (selected.value === correct) {
+                        score++;
+                        resultsHTML += `<p class="result">${question}: Correct!</p>`;
+                    } else {
+                        resultsHTML += `<p class="incorrect">${question}: Incorrect. Correct answer: ${correct}</p>`;
+                    }
+                } else {
+                    resultsHTML += `<p class="incorrect">${question}: Not answered.</p>`;
+                }
+            }
+
+            resultsHTML += `<p><strong>Total Score: ${score}/${Object.keys(correctAnswers).length}</strong></p>`;
+            document.getElementById("results").innerHTML = resultsHTML;
+        }
+    </script>
+</body>
+</html>
